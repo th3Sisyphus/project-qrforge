@@ -1,16 +1,45 @@
-# React + Vite
+# QRForge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kode QR yang dibuat di perangkat Anda. Tanpa unggah.
 
-Currently, two official plugins are available:
+## Fitur aplikasi
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Lima format isi** — tautan, teks, Wi-Fi, kontak (vCard), dan gambar kecil.
+- **Print and paste** — kode QR langsung tampil di workbench. Perubahan live saat isi atau gaya berubah.
+- **Import image** — gambar dikompres otomatis ke WebP data URI agar muat di kapasitas kode QR.
+- **Import logo** — logo tengah dengan koreksi galat naik ke level H.
+- **Format QR** — pilih warna modul, warna latar, bentuk modul, bingkai sudut, titik sudut, dan margin.
+- **Ekspor** — unduh PNG atau SVG sampai 2048 piksel. Salin gambar ke papan klip.
+- **Riwayat** — simpan kode terbaru di perangkat ini, pilih dari daftar, hapus semua.
+- **Privat dan offline** — semua diolah di browser. Tidak ada data yang dikirim ke server.
 
-## React Compiler
+## Keunggulan
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Lokal terus-menerus** — kerja di perangkat Anda. Tidak perlu akun, tidak ada unggah.
+- **Ringkas dan terukur** — ukuran isi tampil di bagian bawah, dengan peringatan simpan saat di atas batas kode QR.
+- **Tampilan disegerakan** — skema kontras langsung, bingkai sudut, dan titik sudut yang bisa dipilih.
+- **Kustomisasi penuh** — warna modul dan latar, bentuk modul, dan logo kustom di salah satu dari lima format.
+- **Lima skema yang dikenal pemindai** — tautan, teks, Wi-Fi, vCard, dan data URI gambar. Tidak ada tautan perantara milik layanan pihak ketiga.
 
-## Expanding the ESLint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19** — antarmuka ini menggunakan komponen reaktif.
+- **Vite 8** — pengelola paket dan pengembangan.
+- **Tailwind CSS 4** — halaman gaya, dipakai lewat `@tailwindcss/vite`.
+- **qr-code-styling** — rendering kode QR dengan pola, logo, dan tingkat koreksi galat.
+- **lucide-react** — ikon antarmuka.
+
+## Instalasi dan penggunaan
+
+```bash
+npm install
+npm run dev
+```
+
+## Kontrol
+
+- **Ruang kerja** — isi di kiri, pratinjau di kanan.
+- **Format** — pilih jenis isi dari bilah atas, isi detail di ruang kerja.
+- **Tampilan** — pilih dari tab `Isi` atau `Tampilan` di bagian bawah ruang kerja.
+- **Ekspor** — pilih resolusi, lalu unduh PNG atau SVG, atau salin gambar.
+- **Riwayat** — buka menu `Riwayat` untuk simpan dan pilih kode yang sudah dibuat.

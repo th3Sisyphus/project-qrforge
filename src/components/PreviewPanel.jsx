@@ -10,7 +10,6 @@ export function PreviewPanel({
   copied,
   formatLabel,
   payloadLength,
-  onGoForge,
 }) {
   return (
     <div className="bench__preview">
